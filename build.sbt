@@ -7,7 +7,7 @@ crossScalaVersions := Seq("2.11.11", "2.12.3")
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules"  %% "scala-xml" % "1.0.6",
-  "org.scalatest"           %% "scalatest" % "3.0.4" % "provided"
+  "org.scalatest"           %% "scalatest" % "3.0.4" % Optional
 )
 
 scalacOptions in Compile ++= Seq("-unchecked", "-deprecation", "-target:jvm-1.8", "-Ywarn-unused-import")
